@@ -1,2 +1,3 @@
-# pokedex
-Iniciando os estudos em JavaScript
+##  Pokedex 
+- Iniciando os estudos em JavaScript
+- Cartela com 150 pokemons advindos de uma API
