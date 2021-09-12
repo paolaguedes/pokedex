@@ -1,0 +1,155 @@
+body {
+	background: #e2e200;
+	background: linear-gradient(to right, rgb(32, 192, 192), rgb(255, 235, 198));
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.9);
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 20px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+}
+
+.card::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.ghost {
+	background: linear-gradient(#eb91df, #811f99);
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+	background: linear-gradient(#eb9191, #962828);
+}
+
+.grass {
+	background: linear-gradient(#d0f6b9,#348137);
+}
+
+.electric {
+	background: linear-gradient(#f3eabf,#958221);
+}
+
+.water, .ice {
+	background: linear-gradient(#bbd9ff,#4173b4);
+}
+
+.ground {
+	background: linear-gradient( #f1c69b,#ce6c0b);
+}
+
+.rock {
+	background: linear-gradient(#e9fdbe,#719229);
+}
+
+.fairy {
+	background: linear-gradient(#eebefd, #a492e0);
+}
+
+.poison {
+	background: linear-gradient(#5baa6b ,#23681e);
+}
+
+.bug {
+	background: linear-gradient( #ffe6c3 , #d8830b);
+}
+
+.dragon {
+	background: linear-gradient(#80b0b6, #3e5e9b);
+}
+
+.psychic {
+	background: linear-gradient(#f5d68a, #a78529);
+}
+
+.flying {
+	background-color: #6753aa;
+}
+
+.fighting {
+	background: linear-gradient(#a5a4a4,#413f3f);
+}
+
+.normal {
+	background: linear-gradient(#ff879b,#a73d3d);
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: white;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+	text-shadow: 1px 1px 5px rgb(65, 65, 65);
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
